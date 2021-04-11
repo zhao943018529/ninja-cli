@@ -1,0 +1,46 @@
+{
+  "name": "test-commander",
+  "version": "1.0.0",
+  "description": "commander demo",
+  "main": "index.js",
+  "bin": {
+    "ninja-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf bin/*",
+    "copy-assets": "ts-node tools/copyAssets",
+    "tsc": "tsc",
+    "build-ts": "npm-run-all clean tsc"
+  },
+  "author": "ninja",
+  "license": "MIT",
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^7.3.1",
+    "@types/lodash": "^4.14.153",
+    "chalk": "^2.4.2",
+    "commander": "^7.2.0",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.1",
+    "@types/node": "^13.13.2",
+    "@types/shelljs": "^0.8.8",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "fs-extra": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.0.2",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}
